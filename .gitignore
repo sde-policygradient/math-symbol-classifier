@@ -1,0 +1,5 @@
+.venv
+*.keras
+*.pkl
+*.{zip, rar, tar}
+*.tar.*
