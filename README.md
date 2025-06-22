@@ -52,4 +52,5 @@ To install dependencies for Ubuntu:
 - `dataset_batch_size`: Batch size used in `tf.data.Dataset.batch`
 
 - `model_init_hidden_layers`: The hidden layers the model will be initialized with if `load_model` is set to `False`.
+- `early_stopping_patience`: The patience argument for the early stopping callback when training.
 - `train_epochs`: Number of epochs to train the model for.
