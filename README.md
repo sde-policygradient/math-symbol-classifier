@@ -24,11 +24,10 @@ Required dependencies:
 - IPython (ipython)
 - Jupyter widgets (ipywidgets)
 - Tensorflow (tensorflow[and-cuda])
-- NumPy (numpy)
 
 To install dependencies for Ubuntu:
 - PSL: `sudo apt install python3`
-- Others: `sudo apt install unrar python3-pip && pip install mlcroissant pillow ipython ipywidgets tensorflow[and-cuda] numpy`
+- Others: `sudo apt install unrar python3-pip && pip install mlcroissant pillow ipython ipywidgets tensorflow[and-cuda]`
 
 ### Variables
 
@@ -47,6 +46,7 @@ To install dependencies for Ubuntu:
 - `dataset_image_resize`: Size to rescale images when building dataset.
 - `dataset_image_resampling`: Resampling method to use when displaying.
 
+- `dataset_generator_shards`: Number of shards to use when building the dataset.
 - `dataset_shuffle_buffer_size`: Size of the buffer used in `tf.data.Dataset.shuffle`. Can either be `int` or `None`. If `None`, the full size of the dataset will be used. If not `None`, `dataset_shuffle_buffer_size` will be used.
 - `train_split`: Fraction of the dataset to use for training, the rest will be used for evaluation.
 - `dataset_batch_size`: Batch size used in `tf.data.Dataset.batch`
