@@ -19,9 +19,7 @@ This comes preconfigured for image classification on common math symbols.
 Required dependencies:
 - Python Standard Library
 - MLCroissant (mlcroissant)
-  - NumPy (numpy)
 - RarFile (rarfile, unrar)
-- Kagglehub (kagglehub)
 - Pillow (pillow)
 - IPython (ipython)
 - Jupyter widgets (ipywidgets)
@@ -29,7 +27,7 @@ Required dependencies:
 
 To install dependencies for Ubuntu:
 - PSL: `sudo apt install python3`
-- Others: `sudo apt install unrar python3-pip && pip install numpy mlcroissant rarfile kagglehub pillow ipython ipywidgets tensorflow[and-cuda]`
+- Others: `sudo apt install unrar python3-pip && pip install mlcroissant pillow ipython ipywidgets tensorflow[and-cuda]`
 
 ### Variables
 
@@ -53,7 +51,6 @@ To install dependencies for Ubuntu:
 - `train_split`: Fraction of the dataset to use for training, the rest will be used for evaluation.
 - `dataset_batch_size`: Batch size used in `tf.data.Dataset.batch`
 
-- `learning_rate`: Float or LearningRateSchedule, learning rate used for model training.
 - `model_init_hidden_layers`: The hidden layers the model will be initialized with if `load_model` is set to `False`.
 - `early_stopping_patience`: The patience argument for the early stopping callback when training.
 - `train_epochs`: Number of epochs to train the model for.
